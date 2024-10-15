@@ -26,9 +26,9 @@ addClassToTitle()
     */
 console.log('Exercise:', exercise++)
 const changePcontent = (newText) => {
-  const pCollaction = document.querySelectorAll('div p')
-  for (let i = 0; i < pCollaction.length; i++) {
-    pCollaction[i].innerText = 'p[' + i + '] ' + newText
+  const pCollection = document.querySelectorAll('div p')
+  for (let i = 0; i < pCollection.length; i++) {
+    pCollection[i].innerText = 'p[' + i + '] ' + newText
   }
 }
 changePcontent('Cambia il testo dei paragrafi')
@@ -38,9 +38,9 @@ changePcontent('Cambia il testo dei paragrafi')
     */
 console.log('Exercise:', exercise++)
 const changeUrls = (destination) => {
-  const aCollaction = document.querySelectorAll('a:not(footer a)')
-  for (let i = 0; i < aCollaction.length; i++) {
-    aCollaction[i].setAttribute('href', destination)
+  const aCollection = document.querySelectorAll('a:not(footer a)')
+  for (let i = 0; i < aCollection.length; i++) {
+    aCollection[i].setAttribute('href', destination)
   }
 }
 changeUrls('https://www.google.com')
